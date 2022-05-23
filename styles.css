@@ -9,15 +9,12 @@
 .container {
     max-width: 1140px;
     margin: 0 auto;
-    border: 3px solid #8A2BE2;
 }
 
 div.map {
     max-width: 1140px;
     margin: 0 auto;
-    border: 3px solid #8A2BE2;
 }
-
 
 .color {
     color: #1F3F68;
@@ -34,7 +31,6 @@ hr {
 /*Списки*/
 .menu {
     padding-top: 42px;
-    border: 3px solid green;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -141,7 +137,6 @@ hr {
 
 .mainpar {
     max-width: 425px;
-    border: 1px solid blue;
 }
 
 .text_white {
@@ -161,9 +156,14 @@ hr {
     line-height: 46px;
     text-align: right;
     letter-spacing: 0.05em;
-    color: #FFFFFF;
+    color: #123E52;
+    background-color: white;
+    opacity: 0.8;
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 10px;
     position: absolute;
-    top: 64px;
+    top: 32px;
     right: 64px;
 }
 
@@ -256,7 +256,6 @@ hr {
 
 /*Footer*/
 div.footer {
-    border: 5px solid red;
     background: #316099;
     margin-top: 112px;
     padding-top: 91px;
@@ -265,7 +264,6 @@ div.footer {
 }
 
 div.footer_top {
-    border: 3px solid Yellow;
     padding-bottom: 96px;
     display: flex;
     flex-wrap: wrap;
@@ -274,13 +272,10 @@ div.footer_top {
 }
 
 div.bemotivated {
-    width: 495px;
-    border: 3px solid pink;
+    max-width: 495px;
 }
 
-div.footer_bottom {
-    border: 3px solid Aquamarine;
-}
+div.footer_bottom {}
 
 div.rights {
     margin-top: 64px;
@@ -289,34 +284,32 @@ div.rights {
 
 /*Блоки главной страницы*/
 div.top {
-    border: 5px solid red;
     height: fit-content;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+    display: flex;
+    padding-top: 115px;
+    align-items: stretch;
 }
 
 .top_content-box {
     display: flex;
     flex-direction: column;
+    width: 40%;
     height: 100%;
 }
 
 div.top_info {
-    border: 5px solid cyan;
-    flex-grow: 1;
-    padding-top: 115px;
-    background-image: url(img/illustration.png);
-    background-repeat: no-repeat;
-    background-position: right 90px center;
-    background-size: 40%;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    align-items: center;
 }
 
 div.shop {
-    border: 3px solid #2b37e2;
     padding-top: 64px;
 }
 
 div.card_box {
-    border: 3px solid green;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -326,7 +319,6 @@ div.card_box {
 
 div.mainprod {
     width: 359px;
-    border: 3px solid Magenta;
     padding: 44px 32px;
     box-sizing: border-box;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
@@ -336,9 +328,7 @@ div.mainprod {
     flex-direction: column;
 }
 
-div.products {
-    border: 3px solid red;
-}
+div.products {}
 
 div.products_parent {
     display: flex;
@@ -357,7 +347,6 @@ div.products_item {
 
 /*Блоки страницы Контакты*/
 div.contact_us {
-    border: 2px solid blue;
     background-image: url(img/Mask\ Group.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -369,7 +358,6 @@ div.contact_us {
 }
 
 .contacts {
-    border: 3px solid Aquamarine;
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -378,7 +366,6 @@ div.contact_us {
 }
 
 div.continfo {
-    border: 3px solid Orchid;
     padding: 56px;
     box-sizing: border-box;
     display: flex;
@@ -386,7 +373,6 @@ div.continfo {
 }
 
 div.contform {
-    border: 3px solid Orchid;
     width: 50%;
     background: #FFFFFF;
     box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
@@ -441,6 +427,7 @@ div.contform {
     display: inline-block;
     margin-top: 71px;
     margin-bottom: 190px;
+    width: fit-content;
 }
 
 /*Кнопка Let's Talk*/
@@ -451,6 +438,7 @@ div.contform {
     background: #5A98D0;
     padding: 15px 80px;
     text-decoration: none;
+    width: fit-content;
 }
 
 /*Другие элементы*/
@@ -476,6 +464,15 @@ div.contform {
 
 .products_image {
     width: 100%;
+    border-radius: 10px;
+}
+
+.video {
+    width: 625px;
+    height: 354px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
 }
 
 /*Медиазапросы*/
@@ -490,12 +487,34 @@ div.contform {
         margin: 0;
     }
 
-    div.top_info {
-        background-position: right 16px bottom 87px;
+    .video {
+        width: 625px;
+        height: 354px;
+        margin-left: 0px;
+        margin-bottom: 145px;
     }
 
     .menu {
         padding-top: 36px;
+    }
+
+    div.top {
+        padding-top: 120px;
+        flex-direction: column;
+    }
+
+    div.top_content-box {
+        width: 100%;
+    }
+
+    div.top_info {
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .top_butt {
+        margin-bottom: 87px;
     }
 
     div.card_box {
@@ -528,9 +547,8 @@ div.contform {
     }
 
     .footer_butt {
-        width: 133px;
-        height: 32px;
-        padding: 3px 0px 10px;
+        width: fit-content;
+        padding: 5px 15px;
         box-sizing: border-box;
     }
 
@@ -569,6 +587,7 @@ div.contform {
 
     div.top {
         height: fit-content;
+        padding-top: 32px;
     }
 
     .menu {
@@ -583,13 +602,13 @@ div.contform {
         margin-bottom: 12px;
     }
 
-    div.top_info {
-        display: flex;
-        flex-direction: column;
+    div.top_content-box {
+        width: 100%;
         align-items: center;
-        padding-top: 36px;
-        background-image: none;
-        height: fit-content;
+    }
+
+    div.top_info {
+        display: none;
     }
 
     .mainpar {
@@ -599,6 +618,7 @@ div.contform {
 
     .top_butt {
         font-size: 12px;
+        line-height: 26px;
         padding: 0 8px;
         margin-top: 32px;
         margin-bottom: 41px;
@@ -673,10 +693,7 @@ div.contform {
     }
 
     .footer_butt {
-        width: 106px;
-        height: 31px;
-        padding: 0;
-        box-sizing: border-box;
+        padding: 3px 10px;
     }
 
     div.footer_top {
