@@ -364,7 +364,7 @@ div.card_box {
   padding-bottom: 64px;
 }
 
-div.mainprod {
+.card {
   max-width: 359px;
   padding: 44px 32px;
   -webkit-box-sizing: border-box;
@@ -380,6 +380,23 @@ div.mainprod {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.card_img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 48px;
+}
+
+.card_link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.05em;
+  color: #5A98D0;
+  text-decoration: none;
+  padding-top: 28px;
 }
 
 div.products_parent {
@@ -494,7 +511,7 @@ div.contform {
   border-color: #5A98D0;
 }
 
-/*Кнопка See our project*/
+/*Кнопка Наш сайт-витрина*/
 .top_butt {
   text-align: center;
   letter-spacing: 0.04em;
@@ -513,7 +530,7 @@ div.contform {
   width: fit-content;
 }
 
-/*Кнопка Let's Talk*/
+/*Кнопка футера Онлайн-витрина*/
 .footer_butt {
   text-align: center;
   letter-spacing: 0.04em;
@@ -527,23 +544,6 @@ div.contform {
 }
 
 /*Другие элементы*/
-.card_link {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 30px;
-  letter-spacing: 0.05em;
-  color: #5A98D0;
-  text-decoration: none;
-  padding-top: 28px;
-}
-
-.card_img {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-bottom: 48px;
-}
-
 .logo {
   margin-bottom: 56px;
 }
