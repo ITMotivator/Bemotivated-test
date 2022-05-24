@@ -616,13 +616,16 @@ div.contform {
         -ms-flex-align: center;
             align-items: center;
   }
+  div.card_box .card_link {
+    padding-top: 25px;
+  }
+  div.card_box .card {
+    margin-bottom: 32px;
+  }
   div.mainprod {
     max-width: 276px;
     padding: 42px 30px;
     margin-bottom: 32px;
-  }
-  .card_link {
-    padding-top: 25px;
   }
   div.bemotivated {
     max-width: 336px;
