@@ -732,7 +732,11 @@ div.contform {
     padding-top: 48px;
   }
   div.card_box {
+    width: 100%;
     padding-top: 32px;
+  }
+  div.card_box .card {
+    width: 100%;
   }
   div.mainprod {
     width: 100%;

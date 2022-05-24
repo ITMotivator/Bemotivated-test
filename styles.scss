@@ -651,7 +651,12 @@ div.contform {
     }
 
     div.card_box {
+        width: 100%;
         padding-top: 32px;
+
+        .card {
+            width: 100%;
+        }
     }
 
     div.mainprod {
