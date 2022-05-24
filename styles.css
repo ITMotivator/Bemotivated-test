@@ -46,19 +46,19 @@ hr {
 .lifooter:first-child::before {
     content: 'A.';
     display: block;
-    margin-right: 15px;
+    margin-right: 19px;
 }
 
 .lifooter:nth-child(2)::before {
     content: 'T.';
     display: block;
-    margin-right: 15px;
+    margin-right: 19px;
 }
 
 .lifooter:last-child::before {
     content: 'E.';
     display: block;
-    margin-right: 15px;
+    margin-right: 19px;
 }
 
 .lifooter {
@@ -266,7 +266,6 @@ div.footer {
 div.footer_top {
     padding-bottom: 96px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -283,9 +282,12 @@ div.rights {
 
 
 /*Блоки главной страницы*/
+div.top_main {
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+}
+
 div.top {
     height: fit-content;
-    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
     display: flex;
     padding-top: 115px;
     align-items: stretch;
@@ -318,7 +320,7 @@ div.card_box {
 }
 
 div.mainprod {
-    width: 359px;
+    max-width: 359px;
     padding: 44px 32px;
     box-sizing: border-box;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
@@ -425,7 +427,7 @@ div.contform {
     padding: 15px 50px;
     text-decoration: none;
     display: inline-block;
-    margin-top: 71px;
+    margin-top: 72px;
     margin-bottom: 190px;
     width: fit-content;
 }
@@ -443,14 +445,13 @@ div.contform {
 
 /*Другие элементы*/
 .card_link {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
     letter-spacing: 0.05em;
     color: #5A98D0;
     text-decoration: none;
+    padding-top: 28px;
 }
 
 .card_img {
@@ -475,6 +476,10 @@ div.contform {
     box-sizing: border-box;
 }
 
+.cont {
+    text-decoration: none;
+}
+
 /*Медиазапросы*/
 @media (max-width: 1024px) {
     .container {
@@ -495,7 +500,7 @@ div.contform {
     }
 
     .menu {
-        padding-top: 36px;
+        padding-top: 55px;
     }
 
     div.top {
@@ -523,11 +528,17 @@ div.contform {
     }
 
     div.mainprod {
+        max-width: 276px;
+        padding: 42px 30px;
         margin-bottom: 32px;
     }
 
+    .card_link {
+        padding-top: 25px;
+    }
+
     div.bemotivated {
-        width: 336px;
+        max-width: 336px;
         box-sizing: border-box;
     }
 
@@ -539,6 +550,7 @@ div.contform {
     div.footer_top {
         padding-left: 92px;
         padding-right: 92px;
+        padding-bottom: 64px;
     }
 
     div.footer_bottom {
@@ -550,6 +562,7 @@ div.contform {
         width: fit-content;
         padding: 5px 15px;
         box-sizing: border-box;
+        margin-left: 51px;
     }
 
     .spisokfoot {
@@ -587,7 +600,7 @@ div.contform {
 
     div.top {
         height: fit-content;
-        padding-top: 32px;
+        padding-top: 33px;
     }
 
     .menu {
@@ -595,7 +608,7 @@ div.contform {
     }
 
     .top_heading {
-        width: 100%;
+        max-width: 343px;
         font-size: 32px;
         line-height: 38px;
         text-align: center;
@@ -612,7 +625,7 @@ div.contform {
     }
 
     .mainpar {
-        width: 100%;
+        max-width: 343px;
         text-align: center;
     }
 
