@@ -312,7 +312,6 @@ div.top_info {
   height: -moz-fit-content;
   height: fit-content;
   padding-top: 115px;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,6 +322,7 @@ div.top_info {
   background-image: url(img/illustration.png);
   background-repeat: no-repeat;
   background-position: right center;
+  background-size: 50%;
 }
 
 div.shop {
@@ -552,6 +552,7 @@ div.contform {
   }
   div.top_info {
     padding-top: 120px;
+    background-position: right bottom 88px;
   }
   .top_butt {
     margin-bottom: 87px;
@@ -644,6 +645,10 @@ div.contform {
     height: -moz-fit-content;
     height: fit-content;
     padding-top: 33px;
+    background-image: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .menu {
     padding-top: 24px;

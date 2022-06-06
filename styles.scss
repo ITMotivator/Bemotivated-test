@@ -287,12 +287,12 @@ div.top {
 div.top_info {
     height: fit-content;
     padding-top: 115px;
-    width: 100%;
     display: flex;
     flex-direction: column;
     background-image: url(img/illustration.png);
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: 50%;
 }
 
 div.shop {
@@ -476,6 +476,7 @@ div.contform {
 
     div.top_info {
         padding-top: 120px;
+        background-position: right bottom 88px;
     }
 
     .top_butt {
@@ -566,6 +567,8 @@ div.contform {
     div.top_info {
         height: fit-content;
         padding-top: 33px;
+        background-image: none;
+        align-items: center;
     }
 
     .menu {
