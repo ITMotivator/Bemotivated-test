@@ -298,12 +298,6 @@ div.top {
     height: 100%;
 }
 
-div.top_info {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    align-items: center;
-}
 
 div.shop {
     padding-top: 64px;
@@ -455,8 +449,6 @@ div.contform {
 }
 
 /*Другие элементы*/
-
-
 .logo {
     margin-bottom: 56px;
 }
@@ -464,14 +456,6 @@ div.contform {
 .products_image {
     width: 100%;
     border-radius: 10px;
-}
-
-.video {
-    width: 625px;
-    height: 354px;
-    margin-left: 10px;
-    margin-right: 10px;
-    box-sizing: border-box;
 }
 
 .cont {
@@ -490,13 +474,6 @@ div.contform {
         margin: 0;
     }
 
-    .video {
-        width: 625px;
-        height: 354px;
-        margin-left: 0px;
-        margin-bottom: 145px;
-    }
-
     .menu {
         padding-top: 55px;
     }
@@ -508,12 +485,6 @@ div.contform {
 
     div.top_content-box {
         width: 100%;
-    }
-
-    div.top_info {
-        width: 100%;
-        justify-content: flex-start;
-        align-items: flex-start;
     }
 
     .top_butt {
@@ -540,8 +511,6 @@ div.contform {
         padding: 42px 30px;
         margin-bottom: 32px;
     }
-
-
 
     div.bemotivated {
         max-width: 336px;
