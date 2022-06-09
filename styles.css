@@ -553,6 +553,7 @@ div.contform {
   div.top_info {
     padding-top: 120px;
     background-position: right bottom 88px;
+    background-size: 40%;
   }
   .top_butt {
     margin-bottom: 87px;
