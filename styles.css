@@ -12,11 +12,6 @@
   margin: 0 auto;
 }
 
-div.map {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
 .color {
   color: #1F3F68;
 }
@@ -274,7 +269,6 @@ hr {
 /*Footer*/
 div.footer {
   background: #316099;
-  margin-top: 112px;
   padding-top: 91px;
   padding-bottom: 64px;
   width: 100%;
@@ -329,7 +323,7 @@ div.shop {
   padding-top: 64px;
 }
 
-div.card_box {
+.card_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,6 +373,10 @@ div.card_box {
   padding-top: 28px;
 }
 
+.products {
+  margin-bottom: 112px;
+}
+
 div.products_parent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -389,7 +387,7 @@ div.products_parent {
   margin-top: 32px;
 }
 
-div.products_item {
+.products_item {
   position: relative;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -426,7 +424,7 @@ div.contact_us {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 60px;
   margin-bottom: 96px;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
@@ -455,6 +453,12 @@ div.contform {
   padding: 56px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.map {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 112px;
 }
 
 /*Контактная форма*/
@@ -539,17 +543,15 @@ div.contform {
 
 /*Медиазапросы*/
 @media (max-width: 1024px) {
+  /*Общие*/
   .container {
     padding-left: 32px;
     padding-right: 32px;
   }
-  div.map {
-    padding: 0;
-    margin: 0;
-  }
   .menu {
     padding-top: 55px;
   }
+  /*Главная страница*/
   div.top_info {
     padding-top: 120px;
     background-position: right bottom 88px;
@@ -575,24 +577,47 @@ div.contform {
     margin-bottom: 32px;
     width: 336px;
   }
-  div.mainprod {
-    max-width: 276px;
-    padding: 42px 30px;
-    margin-bottom: 32px;
+  .products {
+    margin-bottom: 109px;
   }
-  div.bemotivated {
-    max-width: 336px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+  /*Страница Контакты*/
+  .contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 64px;
   }
+  div.contform {
+    width: 75%;
+  }
+  div.continfo {
+    width: 60%;
+  }
+  .butt {
+    padding: 22px;
+    margin-top: 70px;
+  }
+  .map {
+    padding: 0;
+    margin: 0px 0px 64px;
+  }
+  /*Footer*/
   div.footer {
-    margin-top: 109px;
     padding-top: 47px;
   }
   div.footer_top {
     padding-left: 92px;
     padding-right: 92px;
     padding-bottom: 64px;
+  }
+  div.bemotivated {
+    max-width: 336px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   div.footer_bottom {
     padding-left: 92px;
@@ -619,28 +644,18 @@ div.contform {
   .lifooter:last-child {
     margin-top: 25px;
   }
-  .contacts {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  div.contform {
-    width: 75%;
-  }
-  div.continfo {
-    width: 60%;
-  }
 }
 
 @media (max-width: 667px) {
+  /*Общие*/
   .container {
     padding-left: 16px;
     padding-right: 16px;
   }
+  .menu {
+    padding-top: 24px;
+  }
+  /*Главная страница*/
   div.top_info {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -650,9 +665,6 @@ div.contform {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .menu {
-    padding-top: 24px;
   }
   .top_heading {
     max-width: 343px;
@@ -687,8 +699,8 @@ div.contform {
   div.card_box .card {
     width: 100%;
   }
-  div.mainprod {
-    width: 100%;
+  .products {
+    margin-bottom: 64px;
   }
   .par_products {
     width: 100%;
@@ -716,58 +728,10 @@ div.contform {
     margin-right: 0;
     margin-bottom: 16px;
   }
-  div.footer {
-    margin-top: 64px;
-    padding-top: 18px;
-    padding-bottom: 32px;
-  }
-  div.footer_top {
-    padding-bottom: 40px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  div.bemotivated {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  .footer_header {
-    width: 100%;
-    font-size: 24px;
-    line-height: 28px;
-  }
-  .footer_butt {
-    padding: 3px 10px;
-  }
-  div.footer_top {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  div.footer_bottom {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .spisokfoot {
-    margin-top: 32px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .lifooter {
-    line-height: 19px;
-  }
-  .lifooter:first-child {
-    margin-bottom: 17px;
-  }
-  .lifooter:last-child {
-    margin-top: 17px;
-  }
-  div.rights {
-    margin-top: 32px;
-    text-align: center;
+  /*Страница Контакты*/
+  .contacts {
+    margin-top: 50px;
+    margin-bottom: 32px;
   }
   div.contform {
     width: 100%;
@@ -792,6 +756,63 @@ div.contform {
   .text_cont {
     font-size: 16px;
     width: 80%;
+  }
+  .butt {
+    padding: 15px;
+    margin-top: 46px;
+  }
+  .map {
+    margin-bottom: 32px;
+  }
+  /*Footer*/
+  div.footer {
+    padding-top: 18px;
+    padding-bottom: 32px;
+  }
+  div.footer_top {
+    padding: 0px 0px 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  div.bemotivated {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .footer_header {
+    width: 100%;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .footer_butt {
+    padding: 3px 10px;
+    margin-left: 0;
+  }
+  div.footer_bottom {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .spisokfoot {
+    margin-top: 32px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .lifooter {
+    line-height: 19px;
+  }
+  .lifooter:first-child {
+    margin-bottom: 17px;
+  }
+  .lifooter:last-child {
+    margin-top: 17px;
+  }
+  div.rights {
+    margin-top: 32px;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */
